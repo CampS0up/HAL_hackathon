@@ -35,7 +35,7 @@ if __name__ == '__main__':
     print('Bot:', bot_response)
 
     # Write the bot response to a text file
-    with open('bot_response.txt', 'w') as file:
+    with open('bot_response.txt', 'a') as file:
         file.write('You: ' + user_input + '\n')
         file.write('Bot: ' + bot_response + '\n')
 
