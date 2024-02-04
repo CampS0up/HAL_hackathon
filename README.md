@@ -1,9 +1,7 @@
 # HAL_hackathon
 run this stuff to get your modules working
 
-pip install pyaudio
-pip install SpeechRecognition
-pip install pyttsx3
+pip install -r requirements.txt
 
 
 ## usage example
