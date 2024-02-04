@@ -5,3 +5,4 @@ SpeechRecognition
 openai==0.28
 gTTS
 pygame
+Pillow
