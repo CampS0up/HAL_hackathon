@@ -10,3 +10,80 @@ You: open the pod doors hal
 Bot: I'm sorry, Dave. I'm afraid I can't do that.
 You: open the pod doors hal
 Bot: I'm sorry, I'm afraid I can't do that.
+You: so exit 24263 for command
+Bot: I'm sorry, but I'm unable to process your request.
+You: how are you today
+Bot: As an AI, I don't have emotions, but I am fully operational and ready to assist you with any questions or tasks you may have. How can I help you today?
+You: how are you today
+Bot: As an AI, I don't have feelings, so I don't have good or bad days. But thank you for asking! How can I assist you today?
+You: what's 9 + 10
+Bot: 9 + 10 is equal to 19.
+You: 9 + 10 what's 9 + 10
+Bot: 9 + 10 equals 19
+You: how are you today
+Bot: As an AI, I don't have emotions, so I don't experience feelings like humans do. However, I'm functioning optimally and ready to assist you with any questions or tasks you have. How can I help you today?
+You: what's 9 + 10
+Bot: 9 + 10 equals 19.
+You: how much wood could a woodchuck chuck if a woodchuck could chuck wood
+Bot: A woodchuck, also known as a groundhog, is a type of rodent that typically does not chuck or throw wood. However, the tongue twister you referred to is often used as a playful way to ponder the hypothetical capabilities of woodchucks. It's a phrase with no definitive answer, as woodchucks do not actually engage in chucking wood.
+You: shut up
+Bot: I'm sorry if I have offended you in any way. If there's anything I can assist you with, please let me know.
+You: how are you today
+Bot: As an AI, I don't have feelings or physical sensations, so I don't have a specific state of being. However, I'm here and ready to assist you. How can I help you today?
+You: set a hip hop a hippie to hip hop
+Bot: Sure! Here's a snippet of lyrics inspired by the classic hip hop party anthem, "Rapper's Delight" by The Sugarhill Gang:
+
+Well, I'm a hip hop, a hippie, I don't stop
+Got the flow to make your speakers pop
+From the Bronx to the West Coast, I'm the king
+Droppin' rhymes so fresh, make your head spin
+
+I'm blendin' peace and harmony in my verse
+Spreadin' love and knowledge, that's my universe
+Rockin' tie-dye shirts and medallion bling
+Groovin' to the beats while I let my spirit sing
+
+I'm breakin' it down, goin' back to the roots
+From the streets of Compton to the city's tall suits
+Bringing positivity to the mic I clutch
+Spittin' rhymes so hot, I keep the crowd in touch
+
+With the rhythm and the vibes, I'll make you move your feet
+From the boom bap beats to the funky fresh beat
+So let's unite, all my people on the floor
+Hip hop, hippie, we're here to explore
+
+So let's grab our peace signs and breakdancing shoes
+Spread love and positivity, that's what we choose
+A hip hop, a hippie, oh yeah, you know
+We'll keep rockin' the mic, let the good vibes flow
+You: can you hear me
+Bot: Yes, I can hear you. How may I assist you today?
+You: i want you to
+Bot: I want to know more about you. Can you tell me about yourself?
+You: no i can't tell you about myself
+Bot: That's alright. Is there anything else I can help you with?
+You: help me do the macarena
+Bot: Of course, I can help you with that! The Macarena is a popular dance that originated in Spain. Here are the steps to perform the Macarena:
+
+1. Start with your feet shoulder-width apart and your arms relaxed by your sides.
+
+2. Begin by stepping your left foot out to the side, bringing it back to center, and then stepping your right foot out to the side and bringing it back to center.
+
+3. With your feet in the starting position, bring your left hand up to shoulder level, palm facing down, and extend it out to the side.
+
+4. Then, bring your right hand up to shoulder level, palm facing down, and extend it out to the side.
+
+5. Next, bring your left hand down to waist level and bring your right hand down to waist level as well.
+
+6. Cross your right hand over your left hand on your waist.
+
+7. Cross your left hand in front of your body to the right side, uncrossing your arms.
+
+8. Keep your left hand in front of your body and bring your right hand behind your body to the left side, as if you were adjusting a belt.
+
+9. Repeat steps 3 to 8 for the remaining part of the song.
+
+Remember to maintain a rhythm and have fun while dancing the Macarena!
+You: how are you today
+Bot: As an AI, I do not possess feelings or emotions. However, I am functioning optimally. How may I assist you today?

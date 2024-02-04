@@ -1,17 +1,19 @@
 import chat
 import listener
+import speak
 
 voice_input = "" #i know this looks silly here but it'll break if you delte this line
 
 while True:
     voice_input = listener.listen()
-    if ("open the pod bay doors hal" in voice_input):
-        print("I'msorry Dave. I cant do that.")
-        break
+    if (voice_input != None):
+        if ("open the pod bay doors hal" in voice_input):
+                speak.text_to_speech("I'm sorry Dave. I cant do that.")
+                break
 
 while True:
     voice_input = listener.listen()
     if voice_input != None:
+        speak.play_sound("think.mp3")
         response = chat.response(voice_input)
-        print("generating response")
-        print(response)
+        speak.text_to_speech(response)
