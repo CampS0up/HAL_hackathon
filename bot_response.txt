@@ -1,0 +1,6 @@
+You: hello
+Bot: Hello World!
+You: hello
+Bot: Error: Failed to process request
+You: h
+Bot: Error: Failed to process request
