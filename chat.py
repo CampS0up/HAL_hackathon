@@ -1,4 +1,5 @@
 import openai
+import atexit
 
 openai.api_key = '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'
 
@@ -14,4 +15,12 @@ def response(user_input):
 
     reply = chat.choices[0].message.content
 
+    with open('bot_response.txt', 'a') as file:
+        file.write('You: ' + user_input + '\n')
+        file.write('Bot: ' + reply + '\n')
+
     return reply
+
+def atexit():
+    open('bot_response.txt', 'w').close()
+
