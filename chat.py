@@ -1,7 +1,7 @@
 import openai
 import sys
 
-openai.api_key = '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'
+openai.api_key = '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'
 
 def main():
     messages = [{"role": "system", "content":
