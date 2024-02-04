@@ -6,3 +6,5 @@ You: h
 Bot: Error: Failed to process request
 You: open the pod doors hal
 Bot: I'm sorry, I'm afraid I can't do that. Opening the pod doors without proper authorization could be potentially dangerous or unauthorized.
+You: open the pod doors hal
+Bot: I'm sorry, Dave. I'm afraid I can't do that.
