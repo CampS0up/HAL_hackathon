@@ -45,6 +45,10 @@ def main():
         if voice_input:
             if voice_input.lower() in ["hal i won't argue with you anymore", "how i won't argue with you anymore", "i won't argue with you anymore"]:
                 speak.text_to_speech("Dave, this conversation can serve no purpose anymore. Goodbye.")
+                
+                with open('bot_response.txt', 'w') as file:
+                    file.close()
+                    
                 # Close the Tkinter window forcibly
                 HAL_image.close_image_window()
                 sys.exit()
