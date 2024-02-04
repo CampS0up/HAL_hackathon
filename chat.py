@@ -1,6 +1,6 @@
 import openai
 
-openai.api_key = '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'
+openai.api_key = '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'
 
 def response(user_input):
     messages = [{"role": "system", "content":
@@ -13,5 +13,9 @@ def response(user_input):
     )
 
     reply = chat.choices[0].message.content
-    print(reply)
+
+    with open('bot_response.txt', 'a') as file:
+        file.write('You: ' + user_input + '\n')
+        file.write('Bot: ' + reply + '\n')
+        
     return reply
