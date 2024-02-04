@@ -3,3 +3,5 @@ PyAudio
 pyttsx3
 SpeechRecognition
 openai==0.28
+gTTS
+playsound
