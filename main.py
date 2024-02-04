@@ -19,7 +19,7 @@ def display_image():
     global stop_event
     picture_path = "HAL9000.png"
     new_width = 200  # Adjust as needed
-    new_height = 380  # Adjust as needed
+    new_height = 400  # Adjust as needed
     HAL_image.import_and_display_image(picture_path, new_width, new_height)
 
    # Wait until the stop event is set or the image window is closed
