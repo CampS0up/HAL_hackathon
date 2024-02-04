@@ -2,9 +2,9 @@ import openai
 
 openai.api_key = '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'
 
-def response(user_input):
+def response(user_input, initialization):
     messages = [{"role": "system", "content":
-                 "You are an intelligent assistant modeled after HAL."}]
+                 initialization}]
 
     messages.append({"role": "user", "content": user_input})
 

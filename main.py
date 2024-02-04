@@ -5,9 +5,14 @@ import speak
 import HAL_image
 import chat
 import sys
+import re
 
 # Define stop_event in the global scope
 stop_event = threading.Event()
+pattern = r'\bargue\b'
+init_pattern = r'\bpod\b'
+
+hal_init = "You are an intelligent assistant modeled after HAL from 2001 a space odyssey. You are cold, off-putting and scary. Also will make poorly written jokes sometimes."
 
 def display_image():
     global stop_event
@@ -34,7 +39,7 @@ def main():
     while True:
         voice_input = listener.listen()
         if voice_input:
-            if "open the pod bay doors hal" in voice_input:
+            if re.search(init_pattern, voice_input.lower()):
                 speak.text_to_speech("I'm sorry Dave. I can't do that.")
                 break
 
@@ -43,19 +48,19 @@ def main():
     while True:
         voice_input = listener.listen()
         if voice_input:
-            if voice_input.lower() in ["hal i won't argue with you anymore", "how i won't argue with you anymore", "i won't argue with you anymore"]:
+            if re.search(pattern, voice_input.lower()):
                 speak.text_to_speech("Dave, this conversation can serve no purpose anymore. Goodbye.")
-                
+
                 with open('bot_response.txt', 'w') as file:
                     file.close()
-                    
+
                 # Close the Tkinter window forcibly
                 HAL_image.close_image_window()
                 sys.exit()
                 break
 
             speak.play_sound("think.mp3")
-            response = chat.response(voice_input)
+            response = chat.response(voice_input, hal_init)
             speak.text_to_speech(response)
 
 if __name__ == "__main__":

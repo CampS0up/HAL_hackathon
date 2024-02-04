@@ -1,5 +1,6 @@
 from PIL import Image, ImageTk
 import tkinter as tk
+import sys
 
 # Global variable to store the Tkinter window object
 image_window = None
@@ -33,3 +34,9 @@ def close_image_window():
         image_window.after(10, image_window.destroy)
         image_window.quit()
         image_window = None
+    with open('bot_response.txt', 'w') as file:
+                    file.close()
+
+    # Close the Tkinter window forcibly
+    close_image_window()
+    sys.exit()
