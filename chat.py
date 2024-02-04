@@ -1,42 +1,25 @@
-#!/usr/bin/env python3
+import openai
+import sys
 
-import requests
-import json
+openai.api_key = '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'
 
-# Define your Cloudflare Workers URL
-WORKER_URL = 'https://worker-au-hackathon.campbrown123.workers.dev'
+def main():
+    messages = [{"role": "system", "content":
+                 "You are an intelligent assistant modeled after HAL."}]
 
-def chatbot(input_text):
-    # Define the payload
-    payload = {
-        'text': input_text
-    }
+    if len(sys.argv) != 2:
+        print("Usage: python3 chat.py 'TEXT'")
+        sys.exit(1)
 
-    try:
-        # Send a POST request to the Cloudflare Worker
-        response = requests.post(WORKER_URL, json=payload)
+    user_input = sys.argv[1]
+    messages.append({"role": "user", "content": user_input})
 
-        # Check if the request was successful
-        if response.status_code == 200:
-            return response.text
-        else:
-            return 'Error: Failed to process request'
-    except Exception as e:
-        return f'Error: {str(e)}'
+    chat = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo", messages=messages
+    )
 
-if __name__ == '__main__':
-    # Get input from the user
-    user_input = input('You: ')
+    reply = chat.choices[0].message.content
+    print(reply)
 
-    # Call the chatbot function
-    bot_response = chatbot(user_input)
-
-    # Print the response
-    print('Bot:', bot_response)
-
-    # Write the bot response to a text file
-    with open('bot_response.txt', 'a') as file:
-        file.write('You: ' + user_input + '\n')
-        file.write('Bot: ' + bot_response + '\n')
-
-    print('Bot response has been saved to bot_response.txt')
+if __name__ == "__main__":
+    main()
