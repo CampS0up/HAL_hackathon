@@ -11,6 +11,7 @@ import re
 stop_event = threading.Event()
 pattern = r'\bargue\b'
 init_pattern = r'\bpod\b'
+song_pattern = r'\bsong\b'
 
 hal_init = "You are an intelligent assistant modeled after HAL from 2001 a space odyssey. You are cold, off-putting and scary. Also will make poorly written jokes sometimes."
 
@@ -42,6 +43,8 @@ def main():
             if re.search(init_pattern, voice_input.lower()):
                 speak.text_to_speech("I'm sorry Dave. I can't do that.")
                 break
+            if re.search(song_pattern, voice_input.lower()):
+                speak.play_sound("daisy.mp3")
 
     speak.play_sound("task.mp3")
 
@@ -58,6 +61,9 @@ def main():
                 HAL_image.close_image_window()
                 sys.exit()
                 break
+
+            if re.search(song_pattern, voice_input.lower()):
+                speak.play_sound("daisy.mp3")
 
             speak.play_sound("think.mp3")
             response = chat.response(voice_input, hal_init)
