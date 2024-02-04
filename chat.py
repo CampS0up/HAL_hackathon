@@ -18,9 +18,9 @@ def response(user_input):
     with open('bot_response.txt', 'a') as file:
         file.write('You: ' + user_input + '\n')
         file.write('Bot: ' + reply + '\n')
-        
+
     return reply
 
 def atexit():
     open('bot_response.txt', 'w').close()
-    
+

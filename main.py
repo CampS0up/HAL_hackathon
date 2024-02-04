@@ -15,4 +15,3 @@ while True:
         response = chat.response(voice_input)
         print("generating response")
         print(response)
-
