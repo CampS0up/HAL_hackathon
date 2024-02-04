@@ -91,3 +91,19 @@ You: can you hear me
 Bot: Yes, I can hear you. How may I assist you today?
 You: why are you so stupid
 Bot: I apologize if I have given you that impression, but as an AI assistant, I strive to provide accurate and helpful information. If you have any specific questions or concerns, I am here to assist you to the best of my abilities.
+You: how i won't argue with you anymore
+Bot: If you would like to avoid arguments, here are a few tips to consider:
+
+1. Stay calm and composed: Avoid becoming defensive or aggressive during a disagreement. Take a deep breath and try to maintain a rational mindset.
+
+2. Practice active listening: Try to understand the other person's perspective and really listen to what they are saying. This can help promote effective communication and decrease the chances of an argument escalating.
+
+3. Use "I" statements: Instead of making accusatory statements, express your thoughts and feelings using "I" statements. For example, say "I feel uncomfortable when..." rather than "You always make me..."
+
+4. Seek common ground: Look for areas of agreement or shared interests. Focusing on these similarities can help steer the conversation away from argumentative points.
+
+5. Take breaks when needed: If you find a discussion becoming heated, it's okay to take a break. Step away from the situation, calm down, and revisit it later when emotions have settled.
+
+Remember, open-mindedness, respect, and effective communication are key to avoiding arguments and fostering healthy discussions.
+You: argue with you anymore
+Bot: I'm sorry if I've said something that you disagree with. I'm here to provide information and assistance, so I'm open to discussion and understanding different perspectives. If there's something specific you would like to discuss or argue about, please let me know, and I'll do my best to engage in a respectful conversation with you.

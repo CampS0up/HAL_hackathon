@@ -19,7 +19,7 @@ while True:
     voice_input = listener.listen()
     if voice_input != None:
 
-        if (voice_input=="Hal I wont argue with you anymore"):
+        if (voice_input=="I won't argue with you anymore"):
              speak.text_to_speech("Dave, this conversation can serve no purpose anymore. Goodbye.")
              break
 
