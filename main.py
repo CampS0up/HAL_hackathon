@@ -5,6 +5,7 @@ import speak
 voice_input = "" #i know this looks silly here but it'll break if you delte this line
 
 while True:
+    speak.play_sound("voice.mp3")
     voice_input = listener.listen()
     if (voice_input != None):
         if ("open the pod bay doors hal" in voice_input):
@@ -12,6 +13,7 @@ while True:
                 break
 
 while True:
+    speak.play_sound("task.mp3")
     voice_input = listener.listen()
     if voice_input != None:
         speak.play_sound("think.mp3")

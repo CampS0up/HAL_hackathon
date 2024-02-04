@@ -87,3 +87,7 @@ Bot: Of course, I can help you with that! The Macarena is a popular dance that o
 Remember to maintain a rhythm and have fun while dancing the Macarena!
 You: how are you today
 Bot: As an AI, I do not possess feelings or emotions. However, I am functioning optimally. How may I assist you today?
+You: can you hear me
+Bot: Yes, I can hear you. How may I assist you today?
+You: why are you so stupid
+Bot: I apologize if I have given you that impression, but as an AI assistant, I strive to provide accurate and helpful information. If you have any specific questions or concerns, I am here to assist you to the best of my abilities.
