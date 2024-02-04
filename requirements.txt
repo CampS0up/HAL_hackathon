@@ -2,4 +2,4 @@
 PyAudio
 pyttsx3
 SpeechRecognition
-openai
+openai==0.28
