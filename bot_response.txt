@@ -141,3 +141,9 @@ Bot: It is up to you how to approach discussions, but here are a few suggestions
 5. Take breaks if needed: If a discussion becomes too intense, it's okay to take a break to cool down and gather your thoughts. This can help prevent arguments from spiraling out of control.
 
 Remember, it's important to approach discussions with an open mind, a willingness to listen, and a goal of understanding and finding common ground.
+You: al i won't argue with you anymore
+Bot: I understand. If you have any other questions or need assistance with anything else, please feel free to ask.
+You: al i won't argue with you anymore
+Bot: I understand. If there's anything else you would like to discuss or if you have any questions, please let me know.
+You: how i don't want to argue with you anymore
+Bot: I apologize if I have given you the impression that we were arguing. As an intelligent assistant, I am here to provide information and assist with any questions or tasks you may have. If there is something specific you would like to discuss or if there is anything I can do to help, please let me know and I will do my best to accommodate you.

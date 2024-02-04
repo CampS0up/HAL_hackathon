@@ -1,28 +1,58 @@
-import chat
+import threading
+import time
 import listener
 import speak
+import HAL_image
+import chat
+import sys
 
-voice_input = "" #i know this looks silly here but it'll break if you delte this line
+# Define stop_event in the global scope
+stop_event = threading.Event()
 
-speak.play_sound("voice.mp3")
+def display_image():
+    global stop_event
+    picture_path = "HAL9000.png"
+    new_width = 200  # Adjust as needed
+    new_height = 380  # Adjust as needed
+    HAL_image.import_and_display_image(picture_path, new_width, new_height)
 
-while True:
-    voice_input = listener.listen()
-    if (voice_input != None):
-        if ("open the pod bay doors hal" in voice_input):
-                speak.text_to_speech("I'm sorry Dave. I cant do that.")
+   # Wait until the stop event is set or the image window is closed
+    while not stop_event.is_set():
+        time.sleep(1)
+
+def main():
+    global stop_event
+    # Start a thread to display the image
+    image_thread = threading.Thread(target=display_image, daemon=True)
+    image_thread.start()
+
+    time.sleep(1)  # Add a delay to ensure the image window is created
+
+    # Play a sound file named "voice.mp3".
+    speak.play_sound("voice.mp3")
+
+    while True:
+        voice_input = listener.listen()
+        if voice_input:
+            if "open the pod bay doors hal" in voice_input:
+                speak.text_to_speech("I'm sorry Dave. I can't do that.")
                 break
 
-speak.play_sound("task.mp3")
+    speak.play_sound("task.mp3")
 
-while True:
-    voice_input = listener.listen()
-    if voice_input != None:
+    while True:
+        voice_input = listener.listen()
+        if voice_input:
+            if voice_input.lower() in ["hal i won't argue with you anymore", "how i won't argue with you anymore", "i won't argue with you anymore"]:
+                speak.text_to_speech("Dave, this conversation can serve no purpose anymore. Goodbye.")
+                # Close the Tkinter window forcibly
+                HAL_image.close_image_window()
+                sys.exit()
+                break
 
-        if (voice_input=="hal i wont argue with you anymore" or voice_input=="how i won't argue with you anymore"):
-             speak.text_to_speech("Dave, this conversation can serve no purpose anymore. Goodbye.")
-             break
+            speak.play_sound("think.mp3")
+            response = chat.response(voice_input)
+            speak.text_to_speech(response)
 
-        speak.play_sound("think.mp3")
-        response = chat.response(voice_input)
-        speak.text_to_speech(response)
+if __name__ == "__main__":
+    main()
