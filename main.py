@@ -5,9 +5,10 @@ voice_input = "" #i know this looks silly here but it'll break if you delte this
 
 while True:
     voice_input = listener.listen()
-    if ("open the pod bay doors hal" in voice_input):
-        print("I'msorry Dave. I cant do that.")
-        break
+    if (voice_input != None):
+        if ("open the pod bay doors hal" in voice_input):
+            print("I'msorry Dave. I cant do that.")
+            break
 
 while True:
     voice_input = listener.listen()
